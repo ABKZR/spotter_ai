@@ -15,8 +15,9 @@ services:
         value: 3.12.0
 
   # React Frontend Static Site
-  - type: static
+  - type: web
     name: spotter-frontend
+    runtime: static
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: dist
