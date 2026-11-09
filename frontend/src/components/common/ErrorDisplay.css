@@ -1,0 +1,51 @@
+.error-display {
+  display: flex;
+  gap: 16px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.error-display__icon {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  color: #dc2626;
+  margin-top: 2px;
+}
+
+.error-display__content {
+  flex: 1;
+}
+
+.error-display__title {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #991b1b;
+  margin: 0 0 4px;
+}
+
+.error-display__message {
+  font-size: 0.875rem;
+  color: #b91c1c;
+  margin: 0 0 12px;
+  line-height: 1.4;
+}
+
+.error-display__button {
+  background: #dc2626;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.error-display__button:hover {
+  background: #b91c1c;
+}

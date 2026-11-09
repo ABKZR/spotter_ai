@@ -1,0 +1,109 @@
+.route-map-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
+  overflow: hidden;
+}
+
+.route-map-container {
+  width: 100%;
+  height: 100%;
+}
+
+.route-map__legend-overlay {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  z-index: 10;
+}
+
+.route-map__popup-container {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 20;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  max-width: 320px;
+  animation: slideIn 0.18s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-8px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.spotter-pin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  z-index: 50;
+  pointer-events: auto;
+  transition: transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.spotter-pin:hover {
+  transform: scale(1.15) translateY(-4px);
+  z-index: 60;
+}
+
+.spotter-pin__badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  border: 2.5px solid #ffffff;
+}
+
+.spotter-pin--origin .spotter-pin__badge {
+  background: #10b981; /* Emerald green for Point A */
+}
+
+.spotter-pin--destination .spotter-pin__badge {
+  background: #ef4444; /* Crimson red for Point B */
+}
+
+.spotter-pin__letter {
+  transform: rotate(45deg);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.spotter-pin__label {
+  margin-top: 5px;
+  background: #0f172a;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 3px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+}
+
+.spotter-pin--origin .spotter-pin__label {
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+.spotter-pin--destination .spotter-pin__label {
+  border-color: rgba(239, 68, 68, 0.4);
+}

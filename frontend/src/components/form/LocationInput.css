@@ -1,0 +1,119 @@
+.location-input {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.location-input__label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #475569;
+  margin-bottom: 0.35rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.location-input__field {
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: #0f172a;
+  background: #ffffff;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  box-sizing: border-box;
+}
+
+.location-input__field:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.location-input__field--error {
+  border-color: #ef4444;
+}
+
+.location-input__field:disabled {
+  background: #f1f5f9;
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.location-input__error {
+  display: block;
+  font-size: 0.75rem;
+  color: #ef4444;
+  margin-top: 0.25rem;
+  font-weight: 500;
+}
+
+.location-input__dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  border: 1.5px solid #94a3b8;
+  border-radius: 8px;
+  box-shadow: 0 12px 28px -4px rgba(0, 0, 0, 0.2), 0 8px 12px -6px rgba(0, 0, 0, 0.1);
+  margin-top: 4px;
+  max-height: 220px;
+  overflow-y: auto;
+  list-style: none;
+  padding: 4px 0;
+}
+
+.location-input__item {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.625rem 0.875rem;
+  cursor: pointer;
+  font-size: 0.8125rem;
+  color: #1e293b;
+  line-height: 1.35;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.location-input__item:last-child {
+  border-bottom: none;
+}
+
+.location-input__item:hover,
+.location-input__item:focus {
+  background-color: #eff6ff !important;
+  color: #1d4ed8;
+  outline: none;
+}
+
+.location-input__item--status {
+  color: #64748b;
+  cursor: default;
+  font-style: italic;
+  padding: 0.75rem 0.875rem;
+}
+
+.location-input__item--status:hover {
+  background: transparent !important;
+  color: #64748b;
+}
+
+.location-input__item-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #dc2626;
+  font-size: 0.9rem;
+}
+
+.location-input__item-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 500;
+}

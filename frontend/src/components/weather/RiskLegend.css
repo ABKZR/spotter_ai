@@ -1,0 +1,45 @@
+.risk-legend {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(6px);
+  padding: 10px 14px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.75rem;
+  z-index: 10;
+}
+
+.risk-legend__title {
+  font-weight: 600;
+  color: #334155;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.6875rem;
+}
+
+.risk-legend__items {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.risk-legend__item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.risk-legend__swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.risk-legend__label {
+  color: #475569;
+  font-weight: 500;
+}

@@ -1,0 +1,127 @@
+.checkpoint-popup {
+  padding: 12px;
+  min-width: 260px;
+  font-family: inherit;
+}
+
+.checkpoint-popup__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.checkpoint-popup__sequence {
+  font-weight: 700;
+  font-size: 0.9375rem;
+  color: #0f172a;
+}
+
+.checkpoint-popup__dist {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-left: 6px;
+}
+
+.checkpoint-popup__close {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: #94a3b8;
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+.checkpoint-popup__close:hover {
+  color: #0f172a;
+}
+
+.checkpoint-popup__eta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  margin-bottom: 8px;
+  background: #f8fafc;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.checkpoint-popup__label {
+  color: #64748b;
+}
+
+.checkpoint-popup__val {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.checkpoint-popup__badge {
+  font-size: 0.8125rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.checkpoint-popup__adjustments {
+  background: #fff7ed;
+  border: 1px solid #ffedd5;
+  border-radius: 6px;
+  padding: 6px 8px;
+  margin-bottom: 8px;
+  font-size: 0.6875rem;
+  color: #9a3412;
+}
+
+.checkpoint-popup__adjustment {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.checkpoint-popup__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.checkpoint-popup__cell {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 6px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.checkpoint-popup__cell-title {
+  font-size: 0.6875rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.checkpoint-popup__cell-val {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.checkpoint-popup__pill {
+  font-size: 0.625rem;
+  color: #ffffff;
+  padding: 1px 6px;
+  border-radius: 9999px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.checkpoint-popup__warning {
+  margin: 6px 0 0;
+  font-size: 0.6875rem;
+  color: #d97706;
+}

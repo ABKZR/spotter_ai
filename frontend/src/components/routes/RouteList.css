@@ -1,0 +1,12 @@
+.route-list {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.route-list__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  padding: 0;
+}

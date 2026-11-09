@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual Environment
+backend/venv/
+.venv/
+venv/
+
+# Environment Variables
+.env
+*.env
+!.env.example
+
+# Django
+*.sqlite3
+db.sqlite3
+staticfiles/
+media/
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Build Output
+frontend/dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+
+# Logs
+*.log
